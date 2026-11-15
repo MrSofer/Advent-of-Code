@@ -2,6 +2,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.io.IOException;
 
+
 public static final String PATH = "input.txt";
 
 protected record RangesAndIDs(List<long[]> Ranges, List<Long> IDs) {}
@@ -104,6 +105,7 @@ public static class FreshIngredients{
     }
 
     public FreshIngredients(String path) {
+
         String fileContents = readFile(path);
 
         RangesAndIDs fileRecord = getRangesAndIDs(fileContents);
